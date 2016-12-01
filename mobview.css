@@ -1,0 +1,219 @@
+
+@media screen and (max-width:900px) {
+#page-one, #page-five 
+  {
+ height:100%;
+ width: 100%;
+}
+#page-two, #page-three
+{
+  height: auto;
+  width:auto;
+}
+#page-four {
+  width: 100%;
+  height: 200%;
+}
+#page-four {padding-top: 0px;}
+#page-five {padding-top: 0px;}
+
+#koko{
+  padding: 10%;
+  margin-left: 10%;
+}
+#sprava {
+  display: none;
+}
+.p {
+   display: block;
+}
+
+.link
+{
+  margin-right: 12%;
+  margin-left: 12%;
+   font-family: Noteworthy;
+
+}
+.a {
+  margin-top: 0%;
+}
+
+.container {
+  display: none;
+}
+
+.mobview
+   { width:auto;
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto;
+    font-family: Noteworthy ;   
+    letter-spacing: 2px;
+}
+.mobview #rightmob{
+ background-image: url(Картинки/sprava.jpg);
+ display: block;
+ margin:auto;
+ float:right;
+ width:100%;
+ height: 50%;
+ display: inline;
+ color: #523f3f;
+}
+#rightmob h4 {
+   font-weight: normal;
+  border: 3px solid #523f3f;
+  margin: 5%;
+  padding: 10%;
+}
+#ramkamob {
+  border: 3px solid white;
+  margin: 10% 10% 1% 10%;
+}
+
+.mobview #leftmob{
+  background-image: url(Картинки/dessert.jpg);
+  display: block;
+  height: 50%;
+  font-weight: normal;
+  margin:auto;
+  float:left;
+  width:100%;
+/* background:#745959;*/
+ display: inline;
+ color: white;
+}
+#leftmob h4 {
+  font-weight: normal;
+  border: 3px solid white;
+  margin: 5%;
+  padding:10%;
+}
+#ramka1mob {
+  border: 3px solid #523f3f;
+  margin: 10% 10% 10% 10%;
+}
+
+
+.semi-transparent-buttonh {
+  font-family: Noteworthy ;
+  font-weight: bold;
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  background: #fff; /* fallback color for old browsers */
+  background: none;
+  border-radius: 8px;
+  color: #523f3f;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+.semi-transparent-buttonh:hover,
+.semi-transparent-buttonh:focus,
+.semi-transparent-buttonh:active {
+  background: #523f3f;
+  color: #fff;
+  transition: all 0.5s ease-in;
+}
+.semi-transparent:focus {
+  outline: none;
+}
+.with-bordero {
+  border: 2px solid #523f3f;
+}
+.semi-transparent-buttonz {
+  font-family: Noteworthy ;
+  font-weight: bold;
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  background: #fff; /* fallback color for old browsers */
+  background: none;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+.semi-transparent-buttonz:hover,
+.semi-transparent-buttonz:focus,
+.semi-transparent-buttonz:active {
+  background: #fff;
+  color: #000;
+  transition: all 0.5s ease-in;
+}
+
+.with-border {
+  border: 2px solid #fff;
+}
+
+
+  .nav {
+    position: fixed;
+
+    max-height: 100px;
+    width: 100%;
+  } 
+  .nav ul {
+    width: 100%;
+    padding-top:2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid 1px #aaa;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.3);
+  }
+  .nav li {
+     padding-left: 5%;
+    display: none; /* скрыть все <li> пункты */
+    margin: 0;
+  }
+  .nav .current {
+    display: block; /* показывать только текущие активные <li> пункты */
+  }
+  .nav a {
+    display: block;
+    padding: 5px 5px 5px 0px;
+    text-align: left;
+  }
+  .nav .current  {
+    background: none;
+    text-align: left;
+
+  }
+ 
+  /* при наведении на пункты меню */
+  .nav ul:hover {
+    background-image: none;
+  }
+  .nav ul:hover li {
+    display: block;
+    margin: 0 0 5px;
+  }
+  /*.nav ul:hover .current {
+    background: url(Картинки/list-512.png) no-repeat 10px 7px;
+  } */
+ 
+  /* адаптивное меню по центру */
+  .nav.center ul {
+    left: 0%;
+    
+  }
+  
+}

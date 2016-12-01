@@ -1,0 +1,243 @@
+
+
+<!DOCTYPE html>
+<meta charset="utf-8" />
+
+<html lang="ru">
+
+  <head> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Буланжери</title>
+<link rel="shortcut icon" href="logo.jpg">
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<!--[if lt IE 9]>
+  <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css.css">
+<link rel="stylesheet" type="text/css" href="mobview.css">
+
+<link href="elements.css" rel="stylesheet">
+<script src="my_js.js"></script>
+
+<!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="owl.carousel/owl-carousel/owl.carousel.css">
+
+<!-- Default Theme -->
+<link rel="stylesheet" href="owl.carousel/owl-carousel/owl.theme.css">
+
+<!--  jQuery 1.7+  -->
+<script src="owl.carousel/assets/js/jquery-1.9.1.min.js"></script>
+
+<!-- Include js plugin -->
+<script src="owl.carousel/owl-carousel/owl.carousel.js"></script>
+
+<link href="elements.css" rel="stylesheet">
+<script src="about.js"></script>
+
+
+</head>
+<body id="body" >
+<!-- КОНТАКТНАЯ ФОРМА-->
+<div id="abc">
+<!-- Popup Div Starts Here -->
+<div class="wrapper">
+    <div id="main" style="padding:50px 0 0 0;">
+
+    <!-- Form -->
+    <form id="contact-form" action="/" method="post">
+    <img id="close" src="Картинки/close.png" width="30" height="30" onclick ="div_hide()">
+      <h1>Свяжитесь с нами</h1>
+
+      <div>
+        <label>
+          <span>Имя</span>
+          <input  name="name" type="text" tabindex="1" required autofocus>
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>Email: </span>
+          <input  type="text" name="email" tabindex="2" required>
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>Телефон:</span>
+          <input  type="text" name="theme" tabindex="3" required>
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <span>Сообщение:</span>
+          <textarea  type="text" name="comment" tabindex="5" required><?=$message;?></textarea>
+        </label>
+      </div>
+      <div>
+        <button name="submit" type="submit" id="contact-submit">Отправить</button>
+      </div>
+    </form>
+    <!-- /Form -->
+
+    </div>
+  </div>
+<!-- Popup Div Ends Here -->
+</div>
+<!-- Display Popup Button -->
+<!--
+<div id="KOK">
+<nav id="mainNav">
+ <a class="q" href="#page-one"><img src="Картинки/logo1.png" width="34" height="34" ></a>
+ <a class="q" href="#page-one">Главная</a>
+ <a class="q" href="#page-two">О нас</a>
+ <a class="q" href="#page-three">Новости</a>
+ <a class="q" href="#page-four">Каталог</a>
+ <a class="q" href="#page-five">Контакты</a>
+</nav>
+</div>
+-->
+<script>
+  $(document).ready(function(){
+    $("a[href*=#]").on("click", function(e){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 777);
+        e.preventDefault();
+        return false;
+    });
+});
+</script>
+<nav class="nav">
+  <ul>
+      <li class="current"><img src="Картинки/list-512.png" width = "40px"; height= "40px" ></li>
+      <li><a href="#page-one">Главная</a></li>
+      <li><a href="#page-two">О Нас</a></li>
+      <li><a href="#page-three">Новости</a></li>
+      <li><a href="#page-four">Каталог</a></li>
+      <li><a href="#page-five">Контакты</a></li>
+  </ul>
+</nav>
+<div id="page-one">
+<br>
+<br>
+<br>
+<br>
+<div id="Bla"><img src="Картинки/logo1.png" width = "150px"; height= "150px" ></div>
+
+<div id="Bla"><img id="Bla1" src="Картинки/NADPIS.png"></div>
+
+<a type="button" class="semi-transparent-buttona with-border"  id="popup1" onclick="div_show()" >Свяжитесь с нами</a>
+ <a class="semi-transparent-button is-vk" href="https://new.vk.com/bulangery" ><img src="Картинки/vk_icon.png" alt="vk"
+  width = "50px"; height= "50px"; ></a>
+ <a class="semi-transparent-ins is-ins" href="https://www.instagram.com/bulangeri51"><img src="Картинки/black-instagram-icon-vector-22.png" alt="vk" width = "50px"; height= "50px";></a>
+</div>
+
+<div id="page-two">
+ <p class="m">О нас</p>
+<img src="Картинки/Photos.png" id="pictures">
+ <p class="p">
+КД «Буланжери» открыл свои двери совсем недавно, 20 октября 2012 года и уже успел завоевать сердца северян. С нами трудятся кондитеры высокого класса, благодаря этому мы изготавливаем высококачественный натуральный продукт, что позволяет нашей кондитерской следовать своему девизу: «Качественный продукт из натуральных ингредиентов по доступной цене».Мы спешим сообщить, что отныне всю продукцию можно не только заказать, а теперь и увидеть, а так же приобрести в нашем магазине, который открылся 23 января 2016 года по адресу: г. Мурманск, ул. Марата д. 28 (вход со двора). Кондитерский магазин «Буланжери» предлагает вашему вниманию весь ассортимент продукции, которую вы могли бы приобрести или заказать, посетив наш фирменный магазин. В ассортимент нашей компании входят: пирожные, рулеты, невероятные торты для любого праздничного случая, а так же под Ваше настроение.
+ </p>
+
+<p class="m">Наши мероприятия</p>
+<p class="p1">Кондитерский дом Буланжери участвует в организации городских мероприятий и конкурсов.</p>
+<div id="owl-example" class="owl-carousel">
+  <div class="size"><div class="item"><img src="Картинки/2_xnijkfvtbfo.jpg"
+  width = "250px"; height= "340px"; ></div> </div>
+
+    <div class="item"><img src="Картинки/uewdoKhclTE.jpg"
+  width = "250px"; height= "340px"; ></div>
+
+  <div class="item"><img src="Картинки/c.jpg"
+  width = "250px"; height= "340px"; ></div>
+
+  <div class="item"><img src="Картинки/afisha.jpg"
+  width = "250px"; height= "340px"; ></div>
+
+  <div class="item"><img src="Картинки/RkDNSYjYS7g.jpg"
+  width = "250px"; height= "340px"; ></div>
+
+  <div class="item"><img src="Картинки/3_tatyanin_den_afisha_new.jpg"
+  width = "250px"; height= "340px"; ></div>
+
+  <div class="item"><img src="Картинки/8KQ3VxxZmwY.jpg"
+  width = "250px"; height= "340px"; ></div>
+
+
+
+</div>
+<br>
+<br>
+</div>
+
+<div id="page-three">
+
+ <p class="m1">Новости</p>
+ <p class="t1">
+<img src="Картинки/xG5_HWJoRLo.jpg" width = "250px"; height= "340px"; id="rightcake">
+<img src="Картинки/I7mRFe_IF-o.jpg" width = "300px"; height= "340px"; id="rightcake">
+
+ 25 августа 2016</p>
+ <p class="t"> Свадебный торт от Кондитерского Дома Буланжери!!!!!
+Свадебный торт всегда знаменует собой завершение праздничного дня. Он является вкусной точкой, которая непременно должна произвести эффект «разорвавшегося снаряда» как своим видом, так и незабываемым вкусом.
+СЕЙЧАС специальное предложение: Раннее бронирование с 10 мая 2016 по 10 сентября 2016 - КАРАВАЙ В ПОДАРОК!!!
+Сделать заказ и(или) получить консультацию вы сможете по тел. 707-400.
+Ждем вас в нашей кондитерской-лавке по адресу: ул.Марата д.28 (вход со двора)!)
+Или пишите в личку:</p>
+<br>
+<br>
+<br>
+<br>
+ <p class="t1">
+<img src="Картинки/ZAjJ6jjLPwc.jpg" width = "350px"; height= "350px"; id="leftcake">
+ 01 октября 2016</p>
+<p class="t">
+Корпоративы – важные мероприятия как в жизни маленькой компании, так и большой корпорации. Корпоративные торты на таких торжествах – символ успеха компании и объединения ее сотрудников.
+Узнать более подробную информацию Вы можете по тел. 707-400, либо по адресу: г. Мурманск, ул. Марата д.28 вход со двора).
+</p>
+<br>
+</div>
+
+
+<div id="page-four">
+<div class="container">
+
+ <div id="left">
+    <div id="ramka">
+   <h4>
+    Для того чтобы сделать уникальный праздничный торт вы можете связать с нами по телефону:
+    <a class="silka">707-400</a>
+    <br>Вконтакте:</br>
+    <a class="silka" href=http://vk.com/thomson_777>http://vk.com/thomson_777</a>
+    <br>или отправив нам сообщение: </br>
+    <br>
+    <a type="button" class="semi-transparent-buttonz with-border" id="popup1" onclick="div_show()">Свяжитесь с нами</a>
+   </h4>
+   </div>
+  </div>
+  <!--<img id="ili" src="Картинки/ili.png" width="200" height="100" >-->
+ <div id="right">
+ <div id="ramka1">
+    <h4>
+    Также Вы можете ознакомиться с каталогом нашей продукции и приобрести выбранный продукт в кондитерской лавке на территории Кондтерского Дома "Буланжери". Ждем вас с 12 до 18 (кроме среды и субботы)
+    <br>
+    <br>
+    <a type="button" class="semi-transparent-buttonh with-bordero" href=catalog.html >Каталог</a>
+    </h4>
+    </div>
+  </div>
+</div>
+
+
+</div>
+</div>
+
+<div id="page-five">
+<a class="dg-widget-link" href="http://2gis.ru/murmansk/firm/70000001023202226/center/33.07662,68.952257/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Мурманска</a><div class="dg-widget-link"><a href="http://2gis.ru/murmansk/center/33.07662,68.952257/zoom/16/routeTab/rsType/bus/to/33.07662,68.952257╎Буланжери, кондитерский дом?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Буланжери, кондитерский дом</a></div><script charset="utf-8" src="http://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":"100%",
+"height":"100%","borderColor":"#a3a3a3","pos":{"lat":68.952257,"lon":33.07662,"zoom":16},"opt":{"city":"murmansk"},"org":[{"id":"70000001023202226"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+</div>
+
+</body>
+</html>
